@@ -1,0 +1,74 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>登录</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+</head>
+<LINK href="style/common.css" rel=stylesheet type=text/css>
+</link>
+<script src='scripts/common.js' language='javascript'></script>
+<script src='scripts/DateSelector.js' language='javascript'></script>
+<OBJECT id=closes type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11">
+<param name="Command" value="Close">
+</object>
+<script language="javascript">
+  
+  function shutwin()
+  {
+   closes.Click();return;
+  } 
+  
+  function showHome()
+   {
+	var y = window.screen.availHeight-45;
+	var x = window.screen.availWidth-10;
+	var windowOption= "height="+y+" width="+x+" top=1,left=0, toolbar=no, menubar=no, scrollbars=yes,resizable=yes,location=no, status=YES";
+    shutwin();
+    window.open("mainframe.htm", 'RDJHome',windowOption);
+   }
+</script>
+
+<body leftmargin="0" topmargin="0">
+<center>
+  <table width="98%" height="98%" border="0" cellpadding="0" cellspacing="0">
+    <tr> 
+      <td colspan="5"><font style="font-size:12;"><br>
+        &nbsp;&nbsp;欢迎使用白沙物流访销系统</font></td>
+    </tr>
+    <tr> 
+      <td colspan="5"><font style="font-size:12;">&nbsp;&nbsp;请输入您的用户代号和口令，以便登录到白沙物流访销系统</font></td>
+    </tr>
+    <tr> 
+      <td width="22%"><font style="font-size:12;">&nbsp;&nbsp;物流中心：</font></td>
+      <td colspan="4"><select name="logisticsCenter" size="1" id="logisticsCenter" style="font-size:12" class="input">
+          <option value="1">002101 - 物流中心（常温库）</option>
+          <option value="2">002102 - 物流中心（冷库）</option>
+          <option value="3">002103 - 黑龙江</option>
+          <option value="4">002104 - 波密</option>
+          <option value="5">002105 - 永安</option>
+          <option value="6">002106 - 佑康</option>
+        </select> </td>
+    </tr>
+    <tr> 
+      <td><font style="font-size:12;">&nbsp;&nbsp;用户代号：</font></td>
+      <td colspan="4"><input name="textfield" type="text" style="font-size:12" size="30" maxlength="30" class="input"></td>
+    </tr>
+    <tr> 
+      <td><font style="font-size:12;">&nbsp;&nbsp;口令：</font></td>
+      <td colspan="4"><input name="textfield2" type="text" style="font-size:12" size="30" maxlength="30" class="input"></td>
+    </tr>
+    <tr> 
+      <td>&nbsp;</td>
+      <td width="1%">&nbsp;</td>
+      <td width="27%">&nbsp;</td>
+      <td width="23%"> <div align="right">
+          <input type="submit" name="Submit2" value="  确定  " style="font-size:12" onclick="showHome()" class="button">
+        </div></td>
+      <td width="27%"><div align="right">
+          <input name="cancle" type="submit" id="cancle" value="  取消  " style="font-size:12" class="button">
+        </div></td>
+    </tr>
+  </table>
+</center>
+</body>
+</html>

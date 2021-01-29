@@ -1,0 +1,173 @@
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+
+
+
+
+
+
+<html>
+
+
+
+
+
+
+   
+
+
+<head>
+    <title></title>
+<link href="css/webstyle.css" rel="stylesheet" type="text/css">
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function openDialog(vs_url,vi_width,vi_height)
+{
+	var vs_style;
+
+	vs_style = "dialogWidth:"+vi_width+"px;dialogHeight:"+vi_height+"px;center:1;scroll:0;help:0;status:0";
+	window.showModalDialog(vs_url,null,vs_style);
+}
+//-->
+</script>
+
+</head>
+
+
+
+<body >
+
+    
+    
+<table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+  <tr> 
+    <td width="100%" height="100%" valign="top"> <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr> 
+          <td> <table width="100%" cellpadding="0" cellspacing="0" align="center" border="0">
+              <tr height="100%"> 
+                <td valign="top" > <table width="100%" height="100%" cellpadding="0" cellspacing="0" align="center" border="0">
+                    <tr> 
+                      <td width="100%" valign="top"> 
+                        <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="wpsPortletBody">
+                          <tr height="100%"> 
+                            <td width="100%" valign="top"> <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                                <tr>
+                                  <td class="wpsTaskManagerUnselected"><img alt=""  height="2" width="1" src='/wps/WPS_PA_105/images/dot.gif'></td>
+                                </tr>
+                                <tr> 
+                                  <td class="wpsTaskManagerUnselected"> <table border="0" cellspacing="0" cellpadding="3">
+                                      <tr> 
+                                        <td class="wpsTableAdminHead" align="left" nowrap> 
+                                          &nbsp;&nbsp; <a HREF="/wps/myportal/.cmd/ActionDispatcher/_pagr/102/_pa.102/107/.aref/1523527039/.md/-/.piid/119/.ciid/133/.reqid/-1/PC_119_selectedoid/135#133"  style="text-decoration:none;"> 
+                                          <span class="wpsTableAdminHead" style="font-weight:normal"> 
+                                          管理用户组</span> </a> &nbsp;&nbsp; </td>
+                                      </tr>
+                                    </table></td>
+                                </tr>
+                              </table></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                    <tr> 
+                      <td width="100%" valign="top"> 
+                        <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="wpsPortletBody">
+                          <tr height="100%"> 
+                            <td width="100%" valign="top"> <FORM  METHOD="POST" NAME='PC_121_GroupManagement' >
+                                <table cellspacing="0" cellpadding="4" border="0" width="100%">
+                                  <tr class="wpsTableAdminHead"> 
+                                    <td class="wpsTableAdminHead" align="left" nowrap>修改和删除用户组并且管理用户组成员资格</td>
+                                    <td class="wpsTableAdminHead" align="right" nowrap> 
+                                      <a href="/wps/doc/zh/InfoCenter/help/manage_groups.html" class="wpsLabelText" style="text-decoration:none;" target="PortalServerHelpWindow" onClick="javascript: window.open('/wps/doc/zh/InfoCenter/help/manage_groups.html','PortalServerHelpWindow','resizable=yes,scrollbars=yes,menubar=no,toolbar=no,status=no,width=450,height=260,screenX=200,screenY=200,top=200,left=200').focus();" > 
+                                      </a>&nbsp; </td>
+                                  </tr>
+                                </table>
+                                <TABLE cellpadding="5" cellspacing="0" border="0" width=100%>
+                                  <TR> 
+                                    <TD > <TABLE>
+                                        <TR> 
+                                          <TD>用户组名：</TD>
+                                        </TR>
+                                        <TR> 
+                                          <TD><INPUT NAME="PC_121_groupname2"  type="text" style='width:350' value="高层领导组" ></TD>
+                                          <TD>&nbsp;</TD>
+                                        </TR>
+                                        <TR> 
+                                          <TD>用户组描述：</TD>
+                                          <TD>&nbsp;</TD>
+                                        </TR>
+                                        <TR> 
+                                          <TD> <INPUT NAME="PC_121_groupname"  type="text" style='width:350' value="由公司总裁级别人员组成" >
+                                            </INPUT> 
+                                          </TD>
+                                          <TD> <A HREF="#" onclick="return PC_121_doSubmit('createGroupAction');" style="text-decoration:none;" > 
+                                            <img border="0" align="absmiddle" src="images/add.gif" title="创建组" alt="创建组" /> 
+                                            &nbsp;<span class="wpsDialogIconText" >保存用户组</span>&nbsp; 
+                                            </A> </TD>
+                                        </TR>
+                                        <TR> 
+                                          <TD>所有成员：</TD>
+                                        </TR>
+                                        <TR> 
+                                          <TD align="left" > <SELECT  DIR="LTR" NAME="PC_121_groupList" size=10 width=350 style='width:350' >
+                                              <option>张三</option>
+                                              <option>李四</option>
+                                              <option value="cn=品质部,cn=groups,dc=bs56,dc=com">王五</option>
+                                              <option>赵六</option>
+                                              <option>钱七</option>
+                                              <option>周八</option>
+                                            </SELECT></TD>
+                                          <TD align="left" valign="top"> <TABLE>
+                                              <TR> 
+                                                <TD> <A HREF="#" onclick="return PC_121_editMembership();" style="text-decoration:none;" > 
+                                                  <img border="0" align="absmiddle" src="images/membership.gif" title="成员资格" alt="成员资格"  /> 
+                                                  &nbsp;<span class="wpsDialogIconText"><a href="#" onClick="openDialog('groupadduser.htm',500,400);" style="text-decoration:none;">成员资格</a></span>&nbsp; 
+                                                  </A> </TD>
+                                              </TR>
+                                              <TR> 
+                                                <TD> <A HREF="#" onclick="return PC_121_deleteGroup();" style="text-decoration:none;" > 
+                                                  <img border="0" align="absmiddle" src="images/delete1.gif" title="删除组" alt="删除组"  /> 
+                                                  &nbsp;<span class="wpsDialogIconText" >删除成员</span></A></TD>
+                                              </TR>
+                                              <TR>
+                                                <TD>&nbsp;</TD>
+                                              </TR>
+                                              <TR> 
+                                                <TD>&nbsp;</TD>
+                                              </TR>
+                                              <TR> 
+                                                <TD> 
+                                                  <!--<A HREF="#" onclick="return PC_121_showInfo();" style="text-decoration:none;" > 
+                                                  <img border="0" align="absmiddle" src="images/showInfo.gif" title="显示标识" alt="显示标识"  /> 
+                                                  &nbsp;<span class="wpsDialogIconText" >显示标识</span>&nbsp; 
+                                                  </A> -->
+                                                  <A HREF="#" onclick="return PC_121_showInfo();" style="text-decoration:none;" > 
+                                                  <img border="0" align="absmiddle" src="images/showInfo.gif" title="显示标识" alt="显示标识"  /> 
+                                                  &nbsp;<span class="wpsDialogIconText" >关闭窗口</span>&nbsp; 
+                                                  </A> </TD>
+                                              </TR>
+                                            </TABLE></TD>
+                                        </TR>
+                                        <TR> 
+                                          <TD> </TD>
+                                        </TR>
+                                      </TABLE>
+                                      <p>&nbsp;</p></TD>
+                                  </TR>
+                                </TABLE>
+                              </FORM></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                  </table></td>
+              </tr>
+            </table></td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+    
+</body>
+
+</html>

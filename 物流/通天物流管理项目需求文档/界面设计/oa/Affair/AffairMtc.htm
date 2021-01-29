@@ -1,0 +1,118 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>送货地资料修改</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+</head>
+<LINK href="js/rdj.css" rel=stylesheet>
+<body>
+<br>
+<center>
+<table width="95%"  border="1" cellspacing="0" cellpadding="0" bordercolorlight="#C0C0C0" bordercolordark="#FFFFFF">
+  <tr bgcolor="#EBEBEB"> 
+      <td height="28" colspan="6"> <b><font style="color:#0099FF;font-size:12pt">送货地资料修改</font></b><font color="#0099FF"><b>:</b></font></td>
+  </tr>
+  <tr> 
+    <td width="17%" height="28"><font color="#0000FF">货主：</font></td>
+    <td width="24%" height="28" colspan="-1"><select name="select4" style="width:100">
+        <option> </option>
+      </select></td>
+    <td width="14%" height="28" colspan="-1">名称：</td>
+    <td width="45%" height="28"><input type="text" class="text" name="orgtpname102222" size="40" maxlength="60"   disabled = "true" style="background-color:#D4D0C8"></td>
+  </tr>
+  <tr> 
+    <td height="28"> 客户代号：</td>
+    <td height="28" colspan="-1"><input type="text" class="text" name="orgtpname102225" size="15" maxlength="20"></td>
+    <td height="28" colspan="-1">名称：</td>
+    <td height="28"><input type="text" class="text" name="orgtpname1022222" size="40" maxlength="60"   disabled = "true" style="background-color:#D4D0C8"></td>
+  </tr>
+  <tr> 
+    <td height="28"><font color="#0000FF">代号：</font></td>
+    <td height="28" colspan="-1"><input type="text" class="text" name="orgtpname1022252" size="15" maxlength="20"></td>
+    <td height="28" colspan="-1"><font color="#0000FF">名称：</font></td>
+    <td height="28"><input type="text" class="text" name="orgtpname102222222" size="40" maxlength="60"></td>
+  </tr>
+  <tr> 
+    <td height="28"><font color="#0000FF">简称：</font></td>
+    <td height="28" colspan="-1"><input type="text" class="text" name="orgtpname10222" size="20" maxlength="20"></td>
+    <td height="28" colspan="-1"><font color="#0000FF">地址：</font></td>
+    <td height="28"><input type="text" class="text" name="orgtpname102222223" size="40" maxlength="60"> 
+    </td>
+  </tr>
+  <tr> 
+    <td height="28"><font color="#0000FF">距离：</font></td>
+    <td height="28" colspan="-1"><input name="orgtpname10222522" type="text" class="text" value=".000" size="15" maxlength="20"></td>
+    <td height="28" colspan="-1"><font color="#0000FF">运送天数：</font></td>
+    <td height="28"><input name="orgtpname102226" type="text" class="text" value=".0" size="20" maxlength="20"></td>
+  </tr>
+  <tr> 
+    <td height="28">邮政编码:</td>
+    <td height="28" colspan="-1"><input type="text" class="text" name="orgtpname102227" size="20" maxlength="20"></td>
+    <td height="28" colspan="-1">传真：</td>
+    <td height="28"><input type="text" class="text" name="orgtpname1022272" size="20" maxlength="20"> 
+      <input type="checkbox" name="checkbox" value="checkbox">
+      自动传真</td>
+  </tr>
+  <tr> 
+    <td height="28">联系人：</td>
+    <td height="28" colspan="-1"><input type="text" class="text" name="orgtpname10222332" size="20" maxlength="20"></td>
+    <td height="28" colspan="-1">电话：</td>
+    <td height="28"><input type="text" class="text" name="orgtpname10222322" size="10" maxlength="20">
+      --- 
+      <input type="text" class="text" name="orgtpname1022242" size="20" maxlength="30"></td>
+  </tr>
+  <tr> 
+    <td height="28">收货人：</td>
+    <td height="28" colspan="-1"><input type="text" class="text" name="orgtpname102223323" size="20" maxlength="20"></td>
+    <td height="28" colspan="-1">电话：</td>
+    <td height="28"><input type="text" class="text" name="orgtpname10222422" size="20" maxlength="30"></td>
+  </tr>
+  <tr> 
+    <td height="28"><font color="#0000FF">行车路线：</font></td>
+    <td height="28" colspan="-1"><select name="select" style="width:150">
+        <option value="0"></option>
+        <option value="1">000000 不定</option>
+        <option value="11">0000001 11青浦</option>
+        <option value="22">0000002 奉贤</option>
+      </select></td>
+    <td height="28" colspan="-1"><font color="#0000FF">计费区域：</font></td>
+    <td height="28"><select name="select3" style="width:100">
+        <option value="0"></option>
+        <option value="1">0020 鞍山</option>
+        <option value="2">0001 北京</option>
+      </select></td>
+  </tr>
+  <tr> 
+    <td height="28"><font color="#0000FF">城市：</font></td>
+    <td height="28" colspan="-1"><select name="select5" style="width:70">
+        <option value="0"></option>
+        <option value="1">0001 北京</option>
+        <option value="2">0002 上海</option>
+        <option value="3">0003 安徽</option>
+      </select> <select name="select6" style="width:80">
+        <option value="0"></option>
+        <option value="1">0001 北京</option>
+        <option value="2">0002 上海</option>
+      </select></td>
+    <td height="28" colspan="-1">资料状态:</td>
+    <td height="28"><select name="select2" size="1" style="font-size:10">
+        <option value="1">暂停</option>
+        <option value="2" selected>正常</option>
+        <option value="3">将删除</option>
+        <option value="4">删除</option>
+      </select></td>
+  </tr>
+</table>
+  <table width="95%"  border="0" cellpadding="0" cellspacing="0" bordercolorlight="#C0C0C0" bordercolordark="#FFFFFF">
+    <tr> 
+      <td width="38%" height="41"><div align="center"> 
+          <input type="submit" onClick="alert('保存修改')" value="确定" name="a24" style="font-family: 宋体; font-size: 9pt; background-color: #EBEBEB; border: 1 solid #C0C0C0">
+          <input type="submit" onClick="alert('保存修改')" value="删除" name="a243" style="font-family: 宋体; font-size: 9pt; background-color: #EBEBEB; border: 1 solid #C0C0C0">
+          <input type="submit" onClick="alert('重置')" value="重置" name="a242" style="font-family: 宋体; font-size: 9pt; background-color: #EBEBEB; border: 1 solid #C0C0C0">
+          <input type="submit" onClick="window.close()" value="取消" name="a2422" style="font-family: 宋体; font-size: 9pt; background-color: #EBEBEB; border: 1 solid #C0C0C0">
+        </div></td>
+    </tr>
+  </table>
+</center>
+</body>
+</html>

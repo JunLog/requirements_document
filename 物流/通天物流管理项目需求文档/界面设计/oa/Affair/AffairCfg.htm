@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>系统设置</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+</head>
+<LINK href="../../css/webstyle.css" rel=stylesheet>
+<body>
+
+<div class="pagetitle">待办事宜系统设置</div>
+<center>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr> 
+      <td colspan="4" align="right"> <a href="#" onClick="javascript:window.showModalDialog('PlanAdd.htm',null,'dialogWidth:600px;dialogHeight:360px;center:1;scroll:0;help:0;status:0');"> 
+        </a> <a href="#" class="sort" onClick="javascript:window.showModalDialog('../Help.htm',null,'dialogWidth:600px;dialogHeight:300px;center:1;scroll:0;help:0;status:0');"> 
+        <img src="../../images/help_b.gif" width="42" height="17" border="0"> </a></td>
+  </tr>
+</table>
+ <hr color="#EDB363" size=1>
+  <table  width="84%"  border="0" cellspacing="4" cellpadding="0" bordercolorlight="#C0C0C0" bordercolordark="#FFFFFF">
+    <tr bgcolor="#FFFFFF"> 
+      <td width="18%" height="28"><font color="#0000FF">缺省排序项目：</font></td>
+      <td width="82%" height="28"> <select name="select" style="width:140">
+          <option value="0" selected>主题</option>
+          <option value="1">信息来源</option>
+          <option value="2">信息发送人</option>
+          <option value="3">信息发送时间</option>
+          <option value="4">信息类别</option>
+          <option value="5">阅读标志</option>
+        </select></td>
+    </tr>
+    <tr bgcolor="#FFFFFF"> 
+      <td height="28"><font color="#0000FF"> 缺省排序方式：</font></td>
+      <td height="28"> <select name="select2" style="width:140">
+          <option value="0" selected>升序</option>
+          <option value="1">降序</option>
+        </select></td>
+    </tr>
+    <tr bgcolor="#FFFFFF"> 
+      <td height="28" colspan="2"><input type="checkbox" name="checkbox2" value="checkbox">
+        <font color="#0000FF"> 启用短信通知，当接收到新的待办事宜信息时。</font> </td>
+    </tr>
+    <tr bgcolor="#FFFFFF"> 
+      <td height="28" colspan="2"><input type="checkbox" name="checkbox3" value="checkbox">
+        <font color="#0000FF"> 启用邮件通知，当接收到新的待办事宜信息时。 </font></td>
+    </tr>
+    <tr bgcolor="#FFFFFF"> 
+      <td height="28" colspan="2"> <input type="checkbox" name="checkbox" value="checkbox">
+        <font color="#0000FF">仅显示未阅读的待办事宜。 </font></td>
+    </tr>
+  </table>
+   <hr color="#EDB363" size=1>
+<table width="100%"  border="0" cellpadding="0" cellspacing="0" bordercolorlight="#C0C0C0" bordercolordark="#FFFFFF">
+  <tr> 
+      <td width="38%" height="41"> <div align="right">
+          <input type="submit" onClick="alert('保存系统设置！')" value="保存设置" name="a24" style="font-family: 宋体; font-size: 9pt; background-color: #EBEBEB; border: 1 solid #C0C0C0">
+          <input type="submit" onClick="alert('恢复系统默认设置！')" value="默认设置" name="a242" style="font-family: 宋体; font-size: 9pt; background-color: #EBEBEB; border: 1 solid #C0C0C0">
+        </div></td>
+  </tr>
+</table>
+</center>
+</body>
+</html>

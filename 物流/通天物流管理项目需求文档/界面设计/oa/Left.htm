@@ -1,0 +1,164 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>MenuTree</title>
+<base target="_self">
+</head>
+<LINK href="style/common.css" rel=stylesheet type=text/css>
+
+<script language="javascript">
+  function initMenu() {
+    tbl0.style.display = "none";
+    tbl1.style.display = "none";
+	  tbl2.style.display = "none";
+	  tbl3.style.display = "none";
+	  tbl4.style.display = "none";
+	  tbl5.style.display = "none";
+	  tbl6.style.display = "none";
+  }
+  function expand(id) {
+    var objTable = eval("tbl"+id);
+    if (objTable.style.display == "none") {
+      objTable.style.display = "block";
+    } else {
+      objTable.style.display = "none";
+    }
+  }
+</script>
+<body leftmargin="0" marginwidth="0" marginheight="0" onload="initMenu()">
+<center>
+<table border="0" width="92%" cellspacing="1" cellpadding="0" style="font-family: 宋体; font-size: 9pt">
+    <tr> 
+      <td> <TABLE border=0 borderColorDark=#ffffff
+        borderColorLight=#000000 cellPadding=0 cellSpacing=0 width="100%">
+          <TBODY>
+            <TR> 
+              <TD ><img src="../images/title.gif" width="160" height="60"></TD>
+            </TR>
+          </TBODY>
+        </TABLE></td>
+    </tr>
+    <tr> 
+      <td width="100%"> <a class=topmenu href="javascript:expand('0')">
+      <img src="../images/menuhead.gif" border="0" width="9" height="9"> 
+      <font color="#6699CC"><strong>待办事宜</strong></font></a> 
+        <table border="0" width="100%" style="font-family: 宋体; font-size: 9pt" cellspacing="0" cellpadding="2" id="tbl0">
+          <tr> 
+            <td width="8%">&nbsp;</td>
+            <td width="92%">
+			  <img src="../images/menuhead2.gif" border="0" width="9" height="9"> 
+              <a href="Affair\AffairLst.htm" target="main">信息列表</a></td>
+          </tr>
+			<tr> 
+            <td width="8%">&nbsp;</td>
+            <td width="92%">
+			  <img src="../images/menuhead2.gif" border="0" width="9" height="9"> 
+              <a href="Affair\AffairCfg.htm" target="main">系统设置</a></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    
+    <tr> 
+      <td width="100%"> <a class=topmenu href="javascript:expand('0')"><img src="../images/menuhead.gif" border="0" width="9" height="9"></a><a class=topmenu href="javascript:expand('1')"> 
+        <font color="#6699CC"><strong>计划管理</strong></font></a> 
+        <table border="0" width="100%" style="font-family: 宋体; font-size: 9pt" cellspacing="0" cellpadding="2" id="tbl1">
+          <tr> 
+            <td width="8%">&nbsp;</td>
+            <td width="92%">
+			  <img src="../images/menuhead2.gif" border="0" width="9" height="9"> 
+              <a href="plan\PlanLst.htm" target="main">信息列表</a></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    
+    <tr> 
+      <td width="100%"> <a class=topmenu href="javascript:expand('0')"><img src="../images/menuhead.gif" border="0" width="9" height="9"></a><a class=topmenu href="javascript:expand('2')"> 
+        <font color="#6699CC"><strong>会议管理</strong></font></a> 
+        <table border="0" width="100%" style="font-family: 宋体; font-size: 9pt" cellspacing="0" cellpadding="2" id="tbl2">
+          <tr> 
+            <td width="8%">&nbsp;</td>
+            <td width="92%" >
+			  <img src="../images/menuhead2.gif" border="0" width="9" height="9">
+              <a href="Conference\ConferenceLst.htm" target="main">会议信息</a></td>
+          </tr>
+          <tr> 
+            <td width="8%">&nbsp;</td>
+            <td width="92%">
+			  <img src="../images/menuhead2.gif" border="0" width="9" height="9">
+              <a href="Conference\CahierLst.htm" target="main">会议纪要</a></td>
+          </tr>
+          <tr> 
+            <td width="8%">&nbsp;</td>
+            <td width="92%">
+			  <img src="../images/menuhead2.gif" border="0" width="9" height="9">
+              <a href="Conference\ConferenceTraceLst.htm" target="main">执行期量</a></td>
+          </tr>		  
+        </table>
+      </td>
+      
+    </tr>
+    <tr> 
+      <td width="100%"> <a class=topmenu href="javascript:expand('0')"><img src="../images/menuhead.gif" border="0" width="9" height="9"></a><a class=topmenu href="javascript:expand('3')"> 
+        <font color="#6699CC"><strong>质量文件管理</strong></font></a> 
+        <table border="0" width="100%" style="font-family: 宋体; font-size: 9pt" cellspacing="0" cellpadding="2" id="tbl3">
+          <tr> 
+            <td width="8%">&nbsp;</td>
+            <td width="92%" > <img src="../images/menuhead2.gif" border="0" width="9" height="9"> 
+              <a href="ISO9000\ISODocUpload.htm" target="main">文件上传</a></td>
+          </tr>
+          <tr> 
+            <td width="8%">&nbsp;</td>
+            <td width="92%"> <img src="../images/menuhead2.gif" border="0" width="9" height="9"> 
+              <a href="ISO9000\DirectoryMainFrame.htm" target=_top>文件列表</a></td>
+          </tr> 
+        </table>
+      </td>
+    </tr>
+    
+    <tr> 
+      <td height="12"> <a class=topmenu href="javascript:expand('0')"><img src="../images/menuhead.gif" border="0" width="9" height="9"></a><a class=topmenu href="javascript:expand('4')"> 
+        <font color="#6699CC"><strong>信息发布</strong></font></a> 
+        <table border="0" width="100%" style="font-family: 宋体; font-size: 9pt" cellspacing="0" cellpadding="2" id="tbl4">
+          <tr> 
+            <td width="8%" height="2">&nbsp;</td>
+            <td width="92%" height="2" >
+			  <img src="../images/menuhead2.gif" border="0" width="9" height="9">
+              <a href="InfoIssue\InfoIssueMain.htm" target="main">公告</a></td>
+          </tr>
+          <tr> 
+            <td width="8%">&nbsp;</td>
+            <td width="92%">
+			  <img src="../images/menuhead2.gif" border="0" width="9" height="9">
+              <a href="InfoIssue\InfoIssueMain2.htm" target="main">通知</a></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    
+    <tr> 
+      <td height="12"><a class=topmenu href="javascript:expand('0')"><img src="../images/menuhead.gif" border="0" width="9" height="9"></a><a class=topmenu href="javascript:expand('5')"> 
+        <font color="#6699CC"><strong>文档管理</strong></font></a> 
+        <table border="0" width="100%" style="font-family: 宋体; font-size: 9pt" cellspacing="0" cellpadding="2" id="tbl5">
+          <tr> 
+            <td width="8%">&nbsp;</td>
+            <td width="92%" >
+			  <img src="../images/menuhead2.gif" border="0" width="9" height="9">
+              <a href="DocManager\DocUpload.htm" target="main">文档上传</a></td>
+          </tr>
+          <tr> 
+            <td width="8%">&nbsp;</td>
+            <td width="92%">
+			  <img src="../images/menuhead2.gif" border="0" width="9" height="9">
+              <a href="DocManager\DirectoryMainFrame.htm" target=_top>文档搜索</a></td>
+          </tr>          
+
+        </table>
+      </td>
+    </tr>
+  </table>
+  </center>
+</body>
+</html>

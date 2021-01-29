@@ -1,0 +1,197 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<link href="css/webstyle.css" rel="stylesheet" type="text/css">
+</head>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function openDialog(vs_url,vi_width,vi_height)
+{
+	var vs_style;
+
+	vs_style = "dialogWidth:"+vi_width+"px;dialogHeight:"+vi_height+"px;center:1;scroll:0;help:0;status:0";
+	window.showModalDialog(vs_url,null,vs_style);
+}
+//-->
+</script>
+
+<body>
+<div class="pagetitle">用户简要信息列表</div>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr> 
+    <td colspan="4" align="right"><a href="#" onClick="javascript:window.showModalDialog('userinfoQry.htm',null,'dialogWidth:450px;dialogHeight:380px;center:1;scroll:0;help:0;status:0');"><img src="images/chaxun.gif" border="0"></a> 
+      <a href="#" class="sort"  onClick="openDialog('userinfoAdd.htm',500,400)"> <img src="images/xinzen.gif" border="0">
+      </a>  <img src="images/help.gif" border="0"> 
+    </td>
+  </tr>
+</table>
+<table border="1" width="100%" cellspacing="0" cellpadding="1" bordercolorlight="#C0C0C0" bordercolordark="#FFFFFF">
+  <tr> 
+    <td class="tblTitle"><a href="#" class="sort">序号</a></td>
+    <td class="tblTitle"><a href="#" class="sort" onClick="alert('按此排序');">用户工号</a></td>
+    <td class="tblTitle"><a href="#" class="sort" onClick="alert('按此排序');">姓名</a></td>
+    <td class="tblTitle"><a href="#" class="sort" onClick="alert('按此排序');">部门名称</a></td>
+    <td class="tblTitle"><a href="#" class="sort" onClick="alert('按此排序');">职务</a></td>
+    <td class="tblTitle">设置角色</td>
+    <td class="tblTitle">修改</td>
+  </tr>
+  <tr id="row1" class="trOdd"> 
+    <td align="center" > 1</td>
+    <td align="center" ><a href="#" onClick="openDialog('userinfoVw.htm',500,400)">1234</a></td>
+    <td align="center" >张三</td>
+    <td>财务部</td>
+    <td>部门经理</td>
+    <td align="center"><a href="#" onClick="openDialog('useringroup.htm',500,400)">设置</a></td>
+    <td align="center"><a href="#" onClick="openDialog('userinfoMnt.htm',500,400)">修改</a></td>
+  </tr>
+  <tr id="row2"  class="trDouble"> 
+    <td align="center" > 2</td>
+    <td align="center" ><a href="#" onClick="openDialog('userinfoVw.htm',500,400)">4096</a></td>
+    <td align="center" >李四</td>
+    <td>财务部</td>
+    <td>部门副经理</td>
+    <td align="center"><a href="#" onClick="openDialog('useringroup.htm',500,400)">设置</a></td>
+    <td align="center"><a href="#" onClick="openDialog('userinfoMnt.htm',500,400)">修改</a></td>
+  </tr>
+  <tr id="row3" class="trOdd"> 
+    <td align="center" > 3</td>
+    <td align="center"><a href="#" onClick="openDialog('userinfoVw.htm',500,400)">5056</a></td>
+    <td align="center">王五</td>
+    <td>财务部</td>
+    <td>普通员工</td>
+    <td align="center"><a href="#" onClick="openDialog('useringroup.htm',500,400)">设置</a></td>
+    <td align="center"><a href="#" onClick="openDialog('userinfoMnt.htm',500,400)">修改</a></td>
+  </tr>
+  <tr class="trDouble"> 
+    <td align="center" > 4</td>
+    <td align="center"><a href="#" onClick="openDialog('userinfoVw.htm',500,400)">5087</a></td>
+    <td align="center">赵六</td>
+    <td>经理办</td>
+    <td>部门经理</td>
+    <td align="center"><a href="#" onClick="openDialog('useringroup.htm',500,400)">设置</a></td>
+    <td align="center"><a href="#" onClick="openDialog('userinfoMnt.htm',500,400)">修改</a></td>
+  </tr>
+  <tr id="row1" class="trOdd"> 
+    <td align="center" > 5</td>
+    <td align="center" ><a href="#" onClick="openDialog('userinfoVw.htm',500,400)">1244</a></td>
+    <td align="center" >张七</td>
+    <td>经理办</td>
+    <td>部门副经理</td>
+    <td align="center"><a href="#" onClick="openDialog('useringroup.htm',500,400)">设置</a></td>
+    <td align="center"><a href="#" onClick="openDialog('userinfoMnt.htm',500,400)">修改</a></td>
+  </tr>
+  <tr id="row2"  class="trDouble"> 
+    <td align="center" > 6</td>
+    <td align="center" ><a href="#" onClick="openDialog('userinfoVw.htm',500,400)">4196</a></td>
+    <td align="center" >李作</td>
+    <td>经理办</td>
+    <td>普通员工</td>
+    <td align="center"><a href="#" onClick="openDialog('useringroup.htm',500,400)">设置</a></td>
+    <td align="center"><a href="#" onClick="openDialog('userinfoMnt.htm',500,400)">修改</a></td>
+  </tr>
+  <tr id="row3" class="trOdd"> 
+    <td align="center" > 7</td>
+    <td align="center"><a href="#" onClick="openDialog('userinfoVw.htm',500,400)">5256</a></td>
+    <td align="center">王发</td>
+    <td>信息部</td>
+    <td>部门经理</td>
+    <td align="center"><a href="#" onClick="openDialog('useringroup.htm',500,400)">设置</a></td>
+    <td align="center"><a href="#" onClick="openDialog('userinfoMnt.htm',500,400)">修改</a></td>
+  </tr>
+  <tr class="trDouble"> 
+    <td align="center" > 8</td>
+    <td align="center"><a href="#" onClick="openDialog('userinfoVw.htm',500,400)">2087</a></td>
+    <td align="center">赵工</td>
+    <td>信息部</td>
+    <td>部门副经理</td>
+    <td align="center"><a href="#" onClick="openDialog('useringroup.htm',500,400)">设置</a></td>
+    <td align="center"><a href="#" onClick="openDialog('userinfoMnt.htm',500,400)">修改</a></td>
+  </tr>
+  <tr id="row1" class="trOdd"> 
+    <td align="center" > 9</td>
+    <td align="center" ><a href="#" onClick="openDialog('userinfoVw.htm',500,400)">1254</a></td>
+    <td align="center" >徐州</td>
+    <td>信息部</td>
+    <td>普通员工</td>
+    <td align="center"><a href="#" onClick="openDialog('useringroup.htm',500,400)">设置</a></td>
+    <td align="center"><a href="#" onClick="openDialog('userinfoMnt.htm',500,400)">修改</a></td>
+  </tr>
+  <tr id="row2"  class="trDouble"> 
+    <td align="center" > 10</td>
+    <td align="center" ><a href="#" onClick="openDialog('userinfoVw.htm',500,400)">4016</a></td>
+    <td align="center" >权世</td>
+    <td>销售部</td>
+    <td>部门经理</td>
+    <td align="center"><a href="#" onClick="openDialog('useringroup.htm',500,400)">设置</a></td>
+    <td align="center"><a href="#" onClick="openDialog('userinfoMnt.htm',500,400)">修改</a></td>
+  </tr>
+  <tr id="row3" class="trOdd"> 
+    <td align="center" > 11</td>
+    <td align="center"><a href="#" onClick="openDialog('userinfoVw.htm',500,400)">5026</a></td>
+    <td align="center">周莽</td>
+    <td>销售部</td>
+    <td>部门副经理</td>
+    <td align="center"><a href="#" onClick="openDialog('useringroup.htm',500,400)">设置</a></td>
+    <td align="center"><a href="#" onClick="openDialog('userinfoMnt.htm',500,400)">修改</a></td>
+  </tr>
+  <tr class="trDouble"> 
+    <td align="center" > 12</td>
+    <td align="center"><a href="#" onClick="openDialog('userinfoVw.htm',500,400)">5387</a></td>
+    <td align="center">钱江</td>
+    <td>销售部</td>
+    <td>普通员工</td>
+    <td align="center"><a href="#" onClick="openDialog('useringroup.htm',500,400)">设置</a></td>
+    <td align="center"><a href="#" onClick="openDialog('userinfoMnt.htm',500,400)">修改</a></td>
+  </tr>
+  <tr id="row1" class="trOdd"> 
+    <td align="center" > 13</td>
+    <td align="center" ><a href="#" onClick="openDialog('userinfoVw.htm',500,400)">4234</a></td>
+    <td align="center" >白恩</td>
+    <td>配送部</td>
+    <td>部门经理</td>
+    <td align="center"><a href="#" onClick="openDialog('useringroup.htm',500,400)">设置</a></td>
+    <td align="center"><a href="#" onClick="openDialog('userinfoMnt.htm',500,400)">修改</a></td>
+  </tr>
+  <tr id="row2"  class="trDouble"> 
+    <td align="center" > 14</td>
+    <td align="center" ><a href="#" onClick="openDialog('userinfoVw.htm',500,400)">4496</a></td>
+    <td align="center" >包队</td>
+    <td>配送部</td>
+    <td>部门副经理</td>
+    <td align="center"><a href="#" onClick="openDialog('useringroup.htm',500,400)">设置</a></td>
+    <td align="center"><a href="#" onClick="openDialog('userinfoMnt.htm',500,400)">修改</a></td>
+  </tr>
+  <tr id="row3" class="trOdd"> 
+    <td align="center" > 15</td>
+    <td align="center"><a href="#" onClick="openDialog('userinfoVw.htm',500,400)">5006</a></td>
+    <td align="center">水炎</td>
+    <td>配送部</td>
+    <td>普通员工</td>
+    <td align="center"><a href="#" onClick="openDialog('useringroup.htm',500,400)">设置</a></td>
+    <td align="center"><a href="#" onClick="openDialog('userinfoMnt.htm',500,400)">修改</a></td>
+  </tr>
+  <tr class="trDouble"> 
+    <td align="center" > 16</td>
+    <td align="center"><a href="#" onClick="openDialog('userinfoVw.htm',500,400)">6087</a></td>
+    <td align="center">解定</td>
+    <td>配送部</td>
+    <td>普通员工</td>
+    <td align="center"><a href="#" onClick="openDialog('useringroup.htm',500,400)">设置</a></td>
+    <td align="center"><a href="#" onClick="openDialog('userinfoMnt.htm',500,400)">修改</a></td>
+  </tr>
+</table>
+<hr noshade size="1" color="#FFFFFF">
+<table border="1" cellspacing="0" cellpadding="0" width="100%" bordercolorlight="#C0C0C0" bordercolordark="#FFFFFF">
+  <tr> 
+    <td align="center" valign="bottom">第1至16条，共80条</td>
+    <td align="center" valign="bottom">首页 上页 下页 尾页</td>
+    <td align="center" valign="bottom">1/5页</td>
+    <td align="center"> 转到 
+      <input name='pageno2' type=text style="width:20" value=1 size='2' maxlength="2">
+      页 <img src="images/go.gif" width="22" height="22"> </td>
+  </tr>
+</table>
+</body>
+</html>

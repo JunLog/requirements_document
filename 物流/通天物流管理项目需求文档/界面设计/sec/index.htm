@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Untitled Document</title>
+<LINK href="../style/common.css" rel=stylesheet type=text/css>
+</link>
+<script src='../scripts/common.js' language='javascript'></script>
+<script src='../scripts/DateSelector.js' language='javascript'></script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+</head>
+<OBJECT id=closes type="application/x-oleobject" classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11">
+<param name="Command" value="Close">
+</object>
+<script language="javascript">
+  
+  function shutwin()
+  {
+   closes.Click();return;
+  } 
+ function loadLogWindow()
+  {
+	var y = window.screen.availHeight/2-100;
+	var x = window.screen.availWidth/2-200;
+	var windowOption= "height=200, width=400, top="+y+",left="+x+", toolbar=no, menubar=no, scrollbars=no,resizable=no,location=no, status=no";
+    shutwin();
+    window.open("logWindow.htm", 'newwindow',windowOption);
+	
+	//window.showModelessDialog("logWindow.htm", 'newwindow', "height=100, width=400, top=0,left=0, toolbar=no, menubar=no, scrollbars=no,resizable=yes,location=no, status=yes");
+  }
+</script>
+<body onLoad="loadLogWindow()">
+<center>
+
+<center>
+</body>
+</html>

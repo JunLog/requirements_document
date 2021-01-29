@@ -1,0 +1,139 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>白沙物流信息化平台</title>
+<base target="_self">
+</head>
+<LINK href="css/webstyle.css" rel=stylesheet type=text/css>
+
+<script language="javascript">
+  function initMenu() {
+    tbl0.style.display = "none";
+    tbl1.style.display = "none";
+	tbl2.style.display = "none";
+	tbl3.style.display = "none";
+	tbl4.style.display = "none";
+	tbl5.style.display = "none";
+  }
+  function expand(id) {
+    var objTable = eval("tbl"+id);
+    if (objTable.style.display == "none") {
+      objTable.style.display = "block";
+    } else {
+      objTable.style.display = "none";
+    }
+  }
+</script>
+<body leftmargin="0" marginwidth="0" marginheight="0" onload="initMenu()" topmargin="0">
+<table width="20%"  border="0" align="left" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="16%" align="center" valign="top"><img src="images/lt.gif" width="27" height="242"></td>
+    <td width="73%" align="right" valign="top"> 
+      <table width="100%" border="0" align="left" cellpadding="0" cellspacing="0">
+        <tr> 
+          <td align="left" valign="top"> <p align="center"><img src="images/zi.gif" width="167" height="57"> 
+          </td>
+        </tr>
+         <tr> 
+          <td width="100%"> <a class=topmenu href="javascript:expand('0')"><img src="images/l1.gif" width="11" height="9" border="0"><strong><font color="6699C6">协同工作流</font></strong></a> 
+          </td>
+        </tr>
+        <tr> 
+          <td width="100%"> <table  id="tbl0" border="0" width="100%" cellspacing="0" cellpadding="2" >
+        <tr> 
+          <td width="8%">　</td>
+          <td width="92%"><a href="workflow/main.htm" target="main"><img src="images/l2.gif" width="10" height="9" border="0">新建办公事务</a></td>
+        </tr>
+        <tr> 
+          <td width="8%">　</td>
+                <td width="92%"><a href="workflow/待处理事务信息.htm" target="main"><img src="images/l2.gif" width="10" height="9" border="0">待处理事务</a></td>
+        </tr>
+        <tr> 
+          <td width="8%">　</td>
+           <td width="92%"><a href="workflow/在办事务信息.htm" target="main"><img src="images/l2.gif" width="10" height="9" border="0">在办事务</a></td>
+        </tr>
+        <tr> 
+          <td width="8%">　</td>
+                <td width="92%"><a href="workflow/存档记录维护.htm" target="main"><img src="images/l2.gif" width="10" height="9" border="0">存档事务</a></td>
+        </tr>
+            </table></td>
+        </tr>
+  <tr> 
+          <td width="100%"> <a class=topmenu href="javascript:expand('1')"><img src="images/l1.gif" width="11" height="9" border="0">权限管理</a> 
+          </td>
+  </tr>
+  <tr> 
+    <td width="100%"> <table  id="tbl1" border="0" width="100%" cellspacing="0" cellpadding="2" >
+        <tr> 
+          <td width="8%">　</td>
+                <td width="92%"><a href="outeruserList.htm" target="main"><img src="images/l2.gif" width="10" height="9" border="0">外部用户维护</a></td>
+        </tr>
+        <tr> 
+          <td width="8%">　</td>
+                <td width="92%"><a href="outeruserList1.htm" target="main"><img src="images/l2.gif" width="10" height="9" border="0">外部用户访问许可</a></td>
+        </tr>
+        <tr> 
+          <td width="8%">　</td>
+                <td width="92%"><a href="userList.htm" target="main"><img src="images/l2.gif" width="10" height="9" border="0">用户管理</a></td>
+        </tr>
+        <tr> 
+          <td width="8%">　</td>
+                <td width="92%"><a href="roleList.htm" target="main"><img src="images/l2.gif" width="10" height="9" border="0">角色管理</a></td>
+        </tr>
+        <tr> 
+          <td width="8%">　</td>
+                <td width="92%"><a href="userListAccess.htm" target="main"><img src="images/l2.gif" width="10" height="9" border="0">用户访问许可</a></td>
+        </tr>
+        <tr> 
+          <td width="8%">　</td>
+                <td width="92%"><a href="roleListAccess.htm" target="main"><img src="images/l2.gif" width="10" height="9" border="0">角色访问许可</a></td>
+        </tr>
+        <tr> 
+          <td width="8%">　</td>
+                <td width="92%"><a href="setPassword.htm" target="main"><img src="images/l2.gif" width="10" height="9" border="0">口令设置</a></td>
+        </tr>
+        <tr> 
+          <td width="8%">　</td>
+                <td width="92%"><a href="groupLst.htm" target="main"><img src="images/l2.gif" width="10" height="9" border="0">用户组管理</a></td>
+        </tr>
+      </table></td>
+  </tr>
+        <tr> 
+          <td><a class=topmenu href="javascript:expand('2')"><img src="images/l1.gif" width="11" height="9" border="0"></a><a class=topmenu href="javascript:expand('2')"><font color="#6699CC"><strong>系统功能</strong></font></a></td>
+        </tr>
+        <tr> 
+          <td><table border="0" width="100%" cellspacing="0" cellpadding="2" id="tbl2">
+        <tr> 
+          <td>　</td>
+                <td colspan="2"><a href="setPassword.htm" target="main"><img src="images/l2.gif" width="10" height="9" border="0"></a>日志查询</td>
+        </tr>
+        <tr> 
+          <td>　</td>
+          <td>&nbsp;&nbsp;</td>
+                <td><a href="logList.htm" target="main"> </a><a href="setPassword.htm" target="main"><img src="images/l2.gif" width="10" height="9" border="0"></a><a href="logList.htm" target="main">登录日志</a></td>
+        </tr>
+        <tr> 
+          <td>　</td>
+          <td>&nbsp;&nbsp;</td>
+                <td><a href="subsyslogList.htm" target="main"> </a><a href="setPassword.htm" target="main"><img src="images/l2.gif" width="10" height="9" border="0"></a><a href="subsyslogList.htm" target="main">人资日志</a></td>
+        </tr>
+        <tr> 
+          <td>　</td>
+          <td>&nbsp;&nbsp;</td>
+                <td><a href="subsyslogList.htm" target="main"> </a><a href="setPassword.htm" target="main"><img src="images/l2.gif" width="10" height="9" border="0"></a><a href="subsyslogList.htm" target="main">子系统日志</a></td>
+        </tr>
+        <tr> 
+          <td>　</td>
+          <td colspan="2"><a href="javascript:parent.window.close()"  ><img src="images/tuichu.gif" width="16" height="16" border="0">退出系统</a></td>
+        </tr>
+      </table></td>
+  </tr>
+      </table>
+    </td>
+    <td width="2%" bgcolor="95CDFE"></td>
+  </tr>
+</table>
+</body>
+
+</html>

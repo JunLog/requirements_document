@@ -1,0 +1,187 @@
+<html>
+<head>
+<title>无标题文档</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<style>
+<!--
+#foldheader{cursor:hand ; font-weight:bold ;
+list-style-image:url(fold.gif)}
+#foldinglist{list-style-image:url(list.gif)}
+//-->
+</style>
+<script language="JavaScript1.2">
+<!--
+/** 
+* Based on Folding Menu Tree 
+* Dynamic Drive (www.dynamicdrive.com)
+* For full source code, installation instructions,
+* 100's more DHTML scripts, and Terms Of
+* Use, visit dynamicdrive.com
+*
+* Updated to support arbitrarily nested lists
+* by Mark Quinn (mark@robocast.com) November 2nd 1998
+*/
+var head="display:''"
+img1=new Image()
+img1.src="fold.gif"
+img2=new Image()
+img2.src="open.gif"
+
+function change(){
+if(!document.all)
+return
+if (event.srcElement.id=="foldheader") {
+var srcIndex = event.srcElement.sourceIndex
+var nested = document.all[srcIndex+1]
+if (nested.style.display=="none") {
+nested.style.display=''
+event.srcElement.style.listStyleImage="url(open.gif)"
+}
+else {
+nested.style.display="none"
+event.srcElement.style.listStyleImage="url(fold.gif)"
+}
+}
+}
+
+document.onclick=change
+
+//-->
+</script>
+
+
+</head>
+<LINK href="js/rdj.css" rel=stylesheet>
+
+<body bgcolor="#FFFFFF" text="#000000">
+
+<table border="0" width="100%" cellspacing="0" cellpadding="0" bordercolorlight="#C0C0C0" bordercolordark="#FFFFFF">
+  <tr> 
+<ul><font size="2">
+  <p align="left"><img src="../../images/DocTitle.gif" width="160" height="60"></p>
+      
+  <li id="foldheader">&nbsp;企业管理制度</li><ul id="foldinglist" style="display:none" style=&{head};> 
+  <li><a href="#">&nbsp;公司管理制度</a></li>
+  <li><a href="#">&nbsp;配送部管理制度</a></li>
+  <li><a href="#">&nbsp;市场部管理制度</a></li>
+</ul>
+</font>
+<font size="2"><li id="foldheader">&nbsp;政策法规</li>
+<ul id="foldinglist" style="display:none" style=&{head};>
+<li><a href="#">&nbsp;国家政策法规</a></li>
+<li><a href="#">&nbsp;地方政策法规</a></li>
+<li><a href="#">&nbsp;行业政策法规</a></li>
+</ul></font>
+<font size="2"><li id="foldheader">&nbsp;质量手册</li>
+<ul id="foldinglist" style="display:none" style=&{head};>
+	<li><a href="#">&nbsp;配送部</a></li>
+	<li><a href="#">&nbsp;市场部</a></li>
+	<li id="foldheader">&nbsp;记录文件</li>
+	<ul id="foldinglist" style="display:none" style=&{head};>
+	<li><a href="#">&nbsp;配送部</a></li>
+	<li><a href="#">&nbsp;市场部</a></li>
+	</ul></font>
+</ul>
+</tr>
+</table>
+<hr>
+<table width="75%" border="0">
+  <tr>
+    <td><img src="../../images/find.gif" width="16" height="16"><a href="#" onClick="javascript:window.showModalDialog('DocQry.htm',null,'dialogWidth:600px;dialogHeight:360px;center:1;scroll:0;help:0;status:0');">&nbsp;<span class="topmenu"><font size="2"><strong>搜索条件</strong></font></span></a></td>
+  </tr>
+  <tr>
+    <td><img src="../../images/home.gif" width="16" height="16"><a href="..\oamainframe.htm" target=_top>&nbsp;<span class="topmenu"><font size="2"><strong>返回主菜单</strong></font></span></a></td>
+  </tr>
+</table>
+<p align="left">
+  <style>
+<!--
+#foldheader{cursor:hand ; font-weight:bold ;
+list-style-image:url(fold.gif)}
+#foldinglist{list-style-image:url(list.gif)}
+//-->
+</style>
+  <script language="JavaScript1.2">
+<!--
+/** 
+* Based on Folding Menu Tree 
+* Dynamic Drive (www.dynamicdrive.com)
+* For full source code, installation instructions,
+* 100's more DHTML scripts, and Terms Of
+* Use, visit dynamicdrive.com
+*
+* Updated to support arbitrarily nested lists
+* by Mark Quinn (mark@robocast.com) November 2nd 1998
+*/
+var head="display:''"
+img1=new Image()
+img1.src="fold.gif"
+img2=new Image()
+img2.src="open.gif"
+
+function change(){
+if(!document.all)
+return
+if (event.srcElement.id=="foldheader") {
+var srcIndex = event.srcElement.sourceIndex
+var nested = document.all[srcIndex+1]
+if (n>
+	</ul>
+	<li><a href="#">outer 3</a></li>
+	<li><a href="#">outer 4</a></li>
+	</ul></font>
+</ul>
+
+<script language="JavaScript1.2">
+<!--
+/**
+* Get cookie routine by Shelley Powers 
+* (shelley.powers@ne-dev.com)
+*/
+function get_cookie(Name) {
+var search = Name + "="
+var returnvalue = "";
+if (document.cookie.length > 0) {
+offset = document.cookie.indexOf(search)
+// if cookie exists
+if (offset != -1) { 
+offset += search.length
+// set index of beginning of value
+end = document.cookie.indexOf(";", offset);
+// set index of end of cookie value
+if (end == -1) end = document.cookie.length;
+returnvalue=unescape(document.cookie.substring(offset, end))
+}
+}
+return returnvalue;
+}
+if (get_cookie(window.location.pathname) != ''){
+var openresults=get_cookie(window.location.pathname).split(" ")
+for (i=0 ; i < openresults.length ; i++){
+foldinglist[openresults[i]].style.display=''
+document.all[foldinglist[openresults[i]].sourceIndex -
+1].style.listStyleImage="url(open.gif)"
+}
+}
+
+if (document.all){
+var nodelength=foldinglist.length-1
+var nodes=new Array(nodelength)
+var openones=''
+}
+
+function check(){
+for (i=0 ; i <= nodelength ; i++){
+if (foldinglist[i].style.display=='')
+openones=openones + " " + i
+}
+document.cookie=window.location.pathname+"="+openones
+}
+
+if (document.all)
+document.body.onunload=check
+//-->
+</script>
+</p>
+</body>
+</html>

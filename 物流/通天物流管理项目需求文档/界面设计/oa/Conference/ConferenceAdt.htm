@@ -1,0 +1,92 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>会议信息审核</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+</head>
+<LINK href="../../css/webstyle.css" rel=stylesheet>
+<script src='../scripts/DateSelector.js' language='javascript'></script>
+<body>
+<center>
+  <hr color="#ffffff" size=1>
+  <table width="550" border="0">
+  <tr>
+    <td width="544"><div class="pagetitle">审核</div>
+      <hr color="#EDB363" size=1> <center>
+          <table width="84%"  border="0" cellspacing="4" cellpadding="0" bordercolorlight="#C0C0C0" bordercolordark="#FFFFFF">
+            <tr> 
+              <td width="19%" height="30">会议主题： </td>
+              <td width="81%" height="30"><input name="textfield" disabled type="text"class="FormText" value="2003年三、四季度人力资源部培训工作计划" size="46"> 
+              </td>
+            </tr>
+            <tr> 
+              <td height="30">地点：</td>
+              <td height="30"><select name="select" style="width:180
+			  ">
+                  <option value="0">未选择</option>
+                  <option value="1">2701</option>
+                  <option value="2" selected>2702</option>
+                  <option value="3">2703</option>
+                  <option value="4">2704</option>
+                </select> <a href="#" onClick="javascript: window.showModalDialog('SelectObjectNew.htm',null,'dialogWidth:600px;dialogHeight:360px;center:1;scroll:0;help:0;status:0');"> 
+                </a> </td>
+            </tr>
+            <tr> 
+              <td>参加人：</td>
+              <td><input name="dateFm2" type="text" Disabled class="FormText" value="郭倩、苏俊、于俊杰、梁迎春、肖志云、周志军、金波" size="46"> 
+                <a href="#" onClick="javascript: window.showModalDialog('SelectObjectNew.htm',null,'dialogWidth:600px;dialogHeight:360px;center:1;scroll:0;help:0;status:0');"> 
+                <input name="imageField2" type="image" src="../../images/friend.gif" width="16" height="16" border="0">
+                </a> </td>
+            </tr>
+            <tr> 
+              <td height="30">开始时间：</td>
+              <td height="30"> <a href="#" onClick="javascript: window.showModalDialog('SelectObjectNew.htm',null,'dialogWidth:600px;dialogHeight:400px;center:1;scroll:0;help:0;status:0');"> 
+                </a> <input name="dateFm32" type="text" Disabled class="FormText" value="2003-03-23" size="16"> 
+                <input type="image" src="../../images/date.gif" onClick="fPopUpCalendarDlg(dateFm32);return false;" name="image32"> 
+                <font color="#FF0000"> 
+                <input name="textfield2" type="text" class="FormText" value="10：30" size="8">
+                </font></td>
+            </tr>
+            <tr> 
+              <td>结束时间：</td>
+              <td> <input name="dateFm3" type="text" Disabled class="FormText" value="2003-03-23" size="16"> 
+                <input type="image" src="../../images/date.gif" onClick="fPopUpCalendarDlg(dateFm3);return false;" name="image3"> 
+                <font color="#FF0000"> 
+                <input name="textfield22" type="text" class="FormText" value="00：00" size="8">
+                </font> </td>
+            </tr>
+            <tr> 
+              <td>说明：</td>
+              <td><textarea name="textfield23" disabled cols="45" rows="3" class="FormText">&nbsp;&nbsp;请各位与会人员会前阅读《配送部一季度工作总结报告》</textarea></td>
+            </tr>
+            <tr> 
+              <td>申请人：</td>
+              <td><input name="textfield222" disabled disabledtype="text" class="FormText" value="某某部某某人（即当前操作者）" size="30"></td>
+            </tr>
+            <tr> 
+              <td>&nbsp;</td>
+              <td><input name="checkbox2" type="checkbox" value="checkbox" checked tabindex="1">
+                发送到企业内部网站。 <input name="checkbox" type="checkbox" value="checkbox" checked>
+                发送电子邮件通知参加人。</td>
+            </tr>
+          </table>
+        <hr color="#EDB363" size=1>
+      </center>
+</td>
+  </tr>
+</table>
+  <br>
+</center>
+<center>
+  <table width="550"  border="0" cellpadding="0" cellspacing="0" bordercolorlight="#C0C0C0" bordercolordark="#FFFFFF">
+  <tr> 
+    <td width="38%" height="41"> <div align="right"> 
+          <input type="submit" onClick="alert('发布此会议信息！')" value="审核发布" name="a243" style="font-family: 宋体; font-size: 9pt; background-color: #EBEBEB; border: 1 solid #C0C0C0">
+          <input type="submit" onClick="alert('删除')" value="删除" name="a24" style="font-family: 宋体; font-size: 9pt; background-color: #EBEBEB; border: 1 solid #C0C0C0">
+          <input type="submit" onClick="window.close()" value="关闭" name="a2422" style="font-family: 宋体; font-size: 9pt; background-color: #EBEBEB; border: 1 solid #C0C0C0">
+        </div></td>
+  </tr>
+</table>
+</center>
+</body>
+</html>

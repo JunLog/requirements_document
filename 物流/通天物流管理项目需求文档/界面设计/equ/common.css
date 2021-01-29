@@ -1,0 +1,245 @@
+/************************ 全局设置 ************************/
+body  {
+    font-family: 宋体, "Arial";
+    font-size:9pt;
+    background-color:#ffffff
+}
+
+table {
+    font-family: 宋体, "Arial";
+    font-size:9pt;
+    border-collapse: 0;
+    border-spacing: 0;
+}
+
+
+/** 链接 */
+a:link    { font-size:9pt; color: #0000ff; TEXT-DECORATION: none }
+a:visited { font-size:9pt; color: #0000ff; TEXT-DECORATION: none }
+a:active  { font-size:9pt; color: #0000ff; TEXT-DECORATION: none }
+a:hover   { font-size:9pt; color: #003399; TEXT-DECORATION: none }
+/** 主菜单链接 */
+a.mainmenu:active   { font-size:9pt; color: #FFFFFF;}
+a.mainmenu:link     { font-size:9pt; color: #FFFFFF;}
+a.mainmenu:visited  { font-size:9pt; color: #FFFFFF;}
+a.mainmenu:hover    { font-size:9pt; color: #003399;}
+/** 子菜单链接 */
+a.submenu:active   { color: #0000ff; text-decoration: none}
+a.submenu:link     { color: #0000ff; text-decoration: none}
+a.submenu:visited  { color: #0000ff; text-decoration: none}
+a.submenu:hover    { color: #003399; text-decoration: none}
+
+
+/************************  控件  ************************/
+
+/**
+ * SELECT
+ */
+select {
+    background:eeeeee;
+    font:9pt 宋体,Arial;
+}
+
+/** 定长SELECT */
+select.mixlength {
+    width:120;
+}
+
+
+/**
+ * TEXTAREA
+ */
+textarea {
+    background:ffffff;
+    font:9pt 宋体,Arial;
+    border:1 solid #000000
+}
+
+textarea.normal {
+    height:100;
+    width:260;
+}
+
+textarea.small {
+    height:50;
+    width:260;
+}
+
+textarea.big {
+    height:180;
+    width:260;
+}
+
+/*************** 输入框(text, checkbox, radio) ***************/
+
+/**
+ * INPUT
+ */
+input.input {
+    background:ffffff;
+    height:18;
+    font:9pt 宋体,Arial;
+    border:1 solid #000000
+}
+
+/** 短 INPUT */
+input.short {
+    background:ffffff;
+    height:18;
+    width:80;
+    font:9pt 宋体,Arial;
+    border:1 solid #000000
+}
+
+
+/** 长 INPUT */
+input.long {
+    background:ffffff;
+    height:18;
+    width:260;
+    font:9pt 宋体,Arial;
+    border:1 solid #000000
+}
+
+
+/*************** 按钮 ***************/
+
+/**
+ * BUTTON
+ */
+.button1 {
+    background:#808080;
+    height:18;
+    font:9pt 宋体,Arial;
+    color:white;
+    border:1 solid #eeeeee
+}
+
+.button {
+    height:20;
+    font:9pt 宋体,Arial;
+    border:1 solid #616161    
+}
+
+/************************  表格  ************************/
+
+/**
+ * TD
+ */
+td {
+     font-family:宋体,Arial;
+     color: #000000;
+}
+
+/** 主菜单 */
+td.mainmenu {
+    border: 0px solid #000000;
+    background-color:#508CFF;
+    font-size:9pt;
+    font-weight : normal;
+    color : white;
+    text-align:left
+}
+
+/** 小标题居中 TD */
+td.title1 {
+    background-color:#508CFF;
+    border-color:#508CFF;
+    font-size:10pt;
+    font-weight : normal;
+    color : white;
+    line-height:15pt;
+    text-align:center ;
+}
+
+/** 标题居中 TD */
+td.title {
+    background-color:#508CFF;
+    border-color:#508CFF;
+    font-size:10pt;
+    font-weight : normal;
+    color : white;
+    line-height:15pt;
+    text-align:center ;
+}
+
+/** 标题靠左 TD */
+td.titleLeft {
+    background-color:#508CFF;
+    border-color:#508CFF;
+    font-size:10pt;
+    font-weight : normal;
+    color : #000000;
+    line-height:15pt;
+    text-align:left ;
+}
+
+/** 3D标题居中 TD */
+td.title3D {
+    background-color:#508CFF;
+    border-color:#508CFF;
+    border-left : 2px outset  #FFFFFF;
+    border-top : 2px outset  #FFFFFF;
+    border-right : 2px inset  #508CFF;
+    border-bottom : 2px inset  #508CFF;
+    font-size:10pt;
+    font-weight : normal;
+    color : white;
+    line-height:15pt;
+    text-align:center ;
+}
+
+/** 3D标题居左 TD */
+td.title3DLeft {
+    background-color:#508CFF;
+    border-color:#508CFF;
+    border-left : 2px outset  #FFFFFF;
+    border-top : 2px outset  #FFFFFF;
+    border-right : 2px inset  #508CFF;
+    border-bottom : 2px inset  #508CFF;
+    font-size:10pt;
+    font-weight : normal;
+    color : white;
+    line-height:15pt;
+    text-align:left ;
+}
+
+/** 列表-居左 TD */
+td.list {
+    color:#000000;
+    position: relative;
+    top: 15;
+    left:15;
+    text-align:left;
+    line-height:12pt;
+}
+
+/** 带边框的列表-居左 TD */
+td.listWithBorder {
+    color:#000000;
+    border: 1px solid #508CFF;
+    text-align:left;
+    line-height:12pt;
+}
+
+/** 带边框的 TD */
+td.tdWithBorder {
+    border: 1px solid #508CFF;
+}
+
+/** 带背景的 TD */
+td.tdWithGgColor {
+    border: 0px;
+    background:F5F5F5;
+}
+
+/** 带边框和背景的 TD */
+td.tdWithBorderAndGgColor {
+    background:F5F5F5;
+    border: 1px solid #508CFF;
+}
+
+//for pt
+.cls1 { position:absolute; left:250px; top:89px; width:216px; height:72px; z-index:1; }
+.cls2 { position:absolute; left:250px; top:89px; width:95px; height:18px; z-index:2 }
+input.select { font-size: 12px; padding-top: 2px; padding-left: 2px;width:127;}
